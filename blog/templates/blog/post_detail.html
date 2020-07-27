@@ -2,11 +2,15 @@
 {% block content1 %}
 
 
-        <div class=" col-sm-9">
+        <div class=" col-sm-9" >
+
+             <img class=" p-4"   style="width: 48rem;"src="{{ object.image }}" >
             <div class="card-body">
                 <h1>{% block  title %} {{ objects.title }} {% endblock title %}</h1>
                 <p class="text-muted"> {{ post.author }} | {{ post.created_on }} </p>
-                <p class="card-text"> {{ object.content }} | {{ object.image.url }}</p>
+                <p class="card-text"> {{ object.content }} </p>
+
+
             </div>
         </div>
 

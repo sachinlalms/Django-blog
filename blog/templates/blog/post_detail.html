@@ -8,7 +8,12 @@
             <div class="card-body">
                 <h1>{% block  title %} {{ objects.title }} {% endblock title %}</h1>
                 <p class="text-muted"> {{ post.author }} | {{ post.created_on }} </p>
-                <p class="card-text"> {{ object.content }} </p>
+                <p>  {{ object.description }} </p>
+<!--                <p class="card-text"> {{ object.content }} </p>-->
+<!--                 <pre class="cms-code"> <code class="language-java">  </code> </pre>-->
+                 <pre><code class="java"> {{ object.content }} </code></pre>
+                <h3>OUTPUT</h3>
+                <pre><code class="java"> {{ object.output }} </code></pre>
 
 
             </div>

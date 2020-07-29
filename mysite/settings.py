@@ -25,7 +25,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'blog/templates')
 SECRET_KEY = 'jpp#^d!isqjaqyej7(jqutu(ih=wo+r=ep!x))-z&ex)a-_6^_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -81,7 +81,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'postgresql-dimensional-27423',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'djangogirls',
+        'USER': 'name',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
